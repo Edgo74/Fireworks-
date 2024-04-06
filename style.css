@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Pacifico', cursive;
+    color: #fff;
+}
+
+h1, p{
+    margin: 0;
+    padding: 0;
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+    position: absolute;
+    top: 5%;
+    z-index: 2;
+}
+
+h1{
+    z-index: 2;
+    text-transform: uppercase;
+    font-size: 6vw;
+    padding: 0 1rem;
+    /* background-image: linear-gradient(to right top, #f46b45, #eea849, #e0d62b, #a1e55b, #6feda0); */
+    background-image: linear-gradient(to right top,
+    #ffff34,
+    #ffc812,
+    #ff8f2f,
+    #e44d2e,
+    #9e1b32);
+    background-size: 50% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientAnimation 7.5s ease alternate infinite;
+
+}
+
+@keyframes gradientAnimation {
+    to{
+        background-position: 100% top;
+    }
+    /* 0% {
+        background-position: 100% 0;
+    }
+    100% {
+        background-position: 0 0;
+    } */
+}
+
+p{
+    z-index: 2;
+    text-transform: uppercase;
+    font-size: 1.5vw;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.image-container{
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    height: 20%;
+    width: 100%;
+}
+
+img{
+    z-index: 1;
+    bottom: 5%;
+    user-select: none;
+}
+
+
+img, canvas{
+    cursor: pointer;
+    position: absolute;
+}
+
