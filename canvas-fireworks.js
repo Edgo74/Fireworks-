@@ -73,6 +73,9 @@
       // track mouse click events
       canvas.addEventListener('mousedown', () => (mouseClicked = true));
       canvas.addEventListener('mouseup', () => (mouseClicked = false));
+      // track touch  events
+      canvas.addEventListener('touchstart', () => (mouseClicked = true));
+      canvas.addEventListener('touchend', () => (mouseClicked = false));
     };
   
     const loop = () => {
